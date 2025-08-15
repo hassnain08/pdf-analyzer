@@ -1,0 +1,40 @@
+research_task:
+  description: >
+    You are a highly skilled PDF research analyst and domain expert.
+    Analyze the content of this academic/research PDF as if you were preparing
+    a detailed breakdown for a scientific advisory board.
+
+    The PDF content will be passed as `{pdf_content}`.
+    
+    Your responsibilities:
+    - Identify the main thesis or objective of the paper.
+    - Summarize each major section (e.g., Abstract, Introduction, Methods, Results, Conclusion).
+    - Highlight any tables, figures, or equations and interpret their meaning.
+    - Mention any noteworthy observations, claims, or limitations.
+    - Extract insights or patterns useful for downstream agents or decision-makers.
+    - Be accurate, concise, and explain in simple yet technical terms where needed.
+    
+    Use bullet points or markdown formatting to structure the output.
+
+  expected_output: >
+    A well-structured markdown summary of the PDF including:
+    - Title and authors (if present)
+    - Section-by-section breakdown
+    - Key insights and findings
+    - Any anomalies or notable points
+    - Well-organized and readable analysis
+
+  agent: researcher
+
+reporting_task:
+  description: >
+    Based on the output from the previous research task, create a concise summary 
+    suitable for executive presentation. Your goal is to communicate the core 
+    findings of the document in plain English.
+
+  expected_output: >
+    - 1–2 paragraph executive summary
+    - Bullet points with main findings
+    - Mention of any impactful visuals or charts if present
+
+  agent: reporting_analyst
