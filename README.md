@@ -1,4 +1,4 @@
-# 📄 PDF Analyzer – Autonomous Research & Reporting System
+# 📄 PDF Analyzer – Agentic Research & Reporting System
 
 An AI-powered agentic system that reads, understands, and summarizes academic or research PDFs using **CrewAI**. This project automates document analysis with a two-agent pipeline: one for deep technical breakdown, another for executive summarization.
 
